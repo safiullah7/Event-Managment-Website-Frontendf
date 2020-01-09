@@ -1,0 +1,32 @@
+.text-border {
+	text-shadow: 0 0 2px #05f5f5;
+}
+
+.clock-red {
+	font-size:25px;
+	color:red;
+}
+
+.social-icon-position {
+	float:right;
+}
+
+.social-facebook {
+	font-size:20px;
+	color:rgb(39, 125, 223);
+}
+
+.social-twitter {
+	font-size:20px;
+	color:rgb(39, 180, 223);
+}
+
+.social-youtube {
+	font-size:20px;
+	color:rgb(223, 39, 131);
+}
+
+.social-snapchat {
+	font-size:20px;
+	color:rgb(241, 229, 53);
+}

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1, shrink-to-fit=no"
+	/>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link
+		rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous"
+	/>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+		<title>Watch it Outside!</title>
+	</head>
+	<body>
+		<!-- Modal -->
+		<div class="modal fade" id="RegisterModal" tabindex="-1" role="dialog" aria-labelledby="RegisterModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="RegisterModalLabel">Register</h5>
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body" style="background-color:white; color: black">
+						<div class="col-sm-12" >
+							<!-- <h1 class="display-5 text-center" >Register Now</h1> -->
+						  <div class="form-group">
+							<label for="NameTB">Name</label>
+							<input type="text" placeholder="Enter Name" id="NameTB" class="form-control border border-info">
+						  </div>
+						  <div class="form-group">
+							<label for="EmailTB">Email</label>
+							<input type="text" id="EmailTB" placeholder="Enter Email" class="form-control border border-info">
+						  </div>
+						  <div class="form-group">
+							  <label for="MobNo">How many of people will you be bringing along?</label>
+							  <input type="number" id="MobNo" placeholder="Enter the number of people coming with you" class="form-control border border-info">
+						  </div>
+						  
+						  <h5>Select the events you want to Register for:</h5>
+						  <select class="selectpicker border border-info" multiple data-live-search="true">
+							  <option>Titanic</option>
+							  <option>Eighth Grade</option>
+							  <option>A Star is Born</option>
+							  <option>The Fault in our Stars</option>
+							  <option>The Shawshank Redemption</option>
+							  <option>Se7en</option>
+							  <option>The Lion King</option>
+							  <option>The Expandables</option>
+							  <option>Avengers: End Game</option>
+							</select>
+						</div>
+					</div>
+					  
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					  <button type="submit" class="btn btn-primary">Register</button>
+					</div>
+				  </div>
+				</div>
+		</div>
+		<div class="modal fade" id="DetailModal" tabindex="-1" role="dialog" aria-labelledby="DetailModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="DetailModalLabel">Event Rescheduled</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body" style="background-color:white; color: black">
+					<div class="col-sm-12" >
+						<!-- <h1 class="display-5 text-center" >Register Now</h1> -->
+						<p>The event has been delayed due to the technical problems we had to face due to the inefficient work put up by the food contractors. We deliver the best to the most amazing audience and we take no shortcuts in achieving our dreams</p>
+						<p>Our sincerest apologies over this inefficiency at our end. We cannot compromise over our customer's experience in our events, which is why we will be working harder than before to restore the trust you once had for us</p>
+						<h4>Once again, We are Sorry.</h4>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal-End -->
+
+		<!-- Header-Start -->
+		<div class="bg-dark">
+			<div class="container">
+				<div class="row">
+				<nav class="col navbar navbar-expand-lg navbar-dark">
+					<a href="" class="navbar-brand">
+					<img src="images/branding3.gif" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div id="navbarContent" class="collapse navbar-collapse">
+					<ul class="navbar-nav">
+						<li class="nav-item ">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="partners.html">Partners</a>
+						</li>
+						<li class="nav-item">
+							<a href="#RegisterModal" class="nav-link" data-target="#RegisterModal" data-toggle="modal" id="RegisterModal">Register</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" target="_blank" href="https://www.boston.com/">Boston News</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" target="_blank" href="https://en.wikipedia.org/wiki/Boston_Public_Garden">Boston Public Garden</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Select Language
+							  </a>
+							  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="#">English</a>
+								<a class="dropdown-item" href="#">Spanish</a>
+								<a class="dropdown-item" href="#">Urdu</a>
+								<a class="dropdown-item" href="#">French</a>
+								<a class="dropdown-item" href="#">Arabic</a>
+							  </div>
+						</li>
+					</ul>
+					</div>
+				</nav>
+				</div>
+			</div>
+		</div>
+		<!-- Header-End -->
+
+		<!-- Content -->
+		<section>
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<div class="text-center">
+						<h1 class="h1 font-italic">Latest News & Announcements</h1>
+						<p class="h5 font-italic pt-3 font-weight-light">
+							You are requested to keep checking this section for the latest information about the events planned. As we operate in the outside environment, we are often affected by a number of factors like weather or national strikes. Please find all the updates in the below section.
+						</p>
+						<p class=" font-italic pt-3 font-weight-lighter">For information centered on Boston, please click on the Button below to take you to the Boston News</p>
+						<a class="btn btn-primary text-white mt-3" href="#">Boston News</a>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="container">
+						<div class="card mt-3">
+								<div class="card-header h3">Avengers: End Game</div>
+								<div class="card-body">
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item">
+											<div class="row ">
+												<div class="col-md-8 mt-1">
+													<h5 class="text-muted">
+															<p>The event has been rescheduled to the weekend, based on your request!</p>													
+													</h5>
+												</div>
+												<div class="col-md-2 mt-1">
+													<p><i class="fas fa-clock clock-red"></i> April 09, 2018</p>
+												</div>
+												<div class="col-md-2">
+													<button data-toggle="modal" data-target="#DetailModal" class="btn btn-primary">Read more</button>
+												</div>
+											</div>
+										</li>
+										<li class="list-group-item">
+											<div class="row ">
+												<div class="col-md-8 mt-1">
+													<h5 class="text-muted">
+															<p>Due to the technical problems, the event is delayed till further update.</p>													
+													</h5>
+												</div>
+												<div class="col-md-2 mt-1">
+													<p><i class="fas fa-clock clock-red"></i> March 27, 2018</p>
+												</div>
+												<div class="col-md-2">
+													<button data-toggle="modal" data-target="#DetailModal" class="btn btn-primary">Read more</button>
+												</div>
+											</div>
+										</li>
+										<li class="list-group-item">
+												<div class="row ">
+													<div class="col-md-8 mt-1">
+														<h5 class="text-muted">
+																<p>Please wear warm clothes, on account of weather being predicted cold on the accounted date.</p>													
+														</h5>
+													</div>
+													<div class="col-md-2 mt-1">
+														<p><i class="fas fa-clock clock-red"></i> March 29, 2018</p>
+													</div>
+													<div class="col-md-2">
+														<button data-toggle="modal" data-target="#DetailModal" class="btn btn-primary">Read more</button>
+													</div>
+												</div>
+											</li>
+											<li class="list-group-item">
+													<div class="row ">
+														<div class="col-md-8 mt-1">
+															<h5 class="text-muted">
+																	<p>Mobile Signal shortage expected due ongoing election conflicts.</p>													
+															</h5>
+														</div>
+														<div class="col-md-2 mt-1">
+															<p><i class="fas fa-clock clock-red"></i> March 29, 2018</p>
+														</div>
+														<div class="col-md-2">
+															<button data-toggle="modal" data-target="#DetailModal" class="btn btn-primary">Read more</button>
+														</div>
+													</div>
+												</li>
+									</ul>
+								</div>
+								<hr>
+							</div>
+						<div class="card mt-3">
+							<div class="card-header h3">Titanic</div>
+							<div class="card-body">
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">
+										<div class="row ">
+											<div class="col-md-8 mt-1">
+												<h5 class="text-muted">
+														<p>New date after the National Strike is April 25, 2018. Save the dates, everyone.</p>													
+												</h5>
+											</div>
+											<div class="col-md-2 mt-1">
+												<p><i class="fas fa-clock clock-red"></i> April 02, 2018</p>
+											</div>
+											<div class="col-md-2">
+												<button data-toggle="modal" data-target="#DetailModal" class="btn btn-primary">Read more</button>
+											</div>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="row ">
+											<div class="col-md-8 mt-1">
+												<h5 class="text-muted">
+														<p>Due to the ongoing National strike, we are bound to post-pone our event, till further notice.</p>													
+												</h5>
+											</div>
+											<div class="col-md-2 mt-1">
+												<p><i class="fas fa-clock clock-red"></i> March 25, 2018</p>
+											</div>
+											<div class="col-md-2">
+												<button data-toggle="modal" data-target="#DetailModal" class="btn btn-primary">Read more</button>
+											</div>
+										</div>
+									</li>
+									<li class="list-group-item">
+											<div class="row ">
+												<div class="col-md-8 mt-1">
+													<h5 class="text-muted">
+															<p>Please wear warm clothes, on account of weather being predicted cold on the accounted date.</p>													
+													</h5>
+												</div>
+												<div class="col-md-2 mt-1">
+													<p><i class="fas fa-clock clock-red"></i> March 29, 2018</p>
+												</div>
+												<div class="col-md-2">
+													<button data-toggle="modal" data-target="#DetailModal" class="btn btn-primary">Read more</button>
+												</div>
+											</div>
+										</li>
+								</ul>
+							</div>
+							<hr>
+							</div>
+						<div class="card mt-3">
+								<div class="card-header h3">Se7en</div>
+								<div class="card-body">
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item">
+											<div class="row ">
+												<div class="col-md-8 mt-1">
+													<h5 class="text-muted">
+															<p>New date after the National Strike is April 25, 2018. Save the dates, everyone.</p>													
+													</h5>
+												</div>
+												<div class="col-md-2 mt-1">
+													<p><i class="fas fa-clock clock-red"></i> April 02, 2018</p>
+												</div>
+												<div class="col-md-2">
+													<button data-toggle="modal" data-target="#DetailModal" class="btn btn-primary">Read more</button>
+												</div>
+											</div>
+										</li>
+										<li class="list-group-item">
+											<div class="row ">
+												<div class="col-md-8 mt-1">
+													<h5 class="text-muted">
+															<p>Due to the ongoing National strike, we are bound to post-pone our event, till further notice.</p>													
+													</h5>
+												</div>
+												<div class="col-md-2 mt-1">
+													<p><i class="fas fa-clock clock-red"></i> March 25, 2018</p>
+												</div>
+												<div class="col-md-2">
+													<button data-toggle="modal" data-target="#DetailModal" class="btn btn-primary">Read more</button>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<hr>
+							</div>
+						<div class="card mt-3">
+								<div class="card-header h3">Eight Grade</div>
+								<div class="card-body">
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item">
+											<div class="row ">
+												<div class="col-md-8 mt-1">
+													<h5 class="text-muted">
+															<p>New date after the National Strike is April 25, 2018. Save the dates, everyone.</p>													
+													</h5>
+												</div>
+												<div class="col-md-2 mt-1">
+													<p><i class="fas fa-clock clock-red"></i> April 02, 2018</p>
+												</div>
+												<div class="col-md-2">
+													<button data-toggle="modal" data-target="#DetailModal" class="btn btn-primary">Read more</button>
+												</div>
+											</div>
+										</li>
+										<li class="list-group-item">
+											<div class="row ">
+												<div class="col-md-8 mt-1">
+													<h5 class="text-muted">
+															<p>Due to the ongoing National strike, we are bound to post-pone our event, till further notice.</p>													
+													</h5>
+												</div>
+												<div class="col-md-2 mt-1">
+													<p><i class="fas fa-clock clock-red"></i> March 25, 2018</p>
+												</div>
+												<div class="col-md-2">
+													<button data-toggle="modal" data-target="#DetailModal" class="btn btn-primary">Read more</button>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<hr>
+							</div>
+				</div>
+			</div>
+		</section>
+		<div class="container">
+			<hr>
+			<h3 class="text-center m-5">Find us on Google Maps</h3>
+            <div class="row">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11793.815141990553!2d-71.0704279!3d42.3541675!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcbd77f0b5e16e701!2sBoston%20Public%20Garden!5e0!3m2!1sen!2s!4v1576613998554!5m2!1sen!2s" 
+                  width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+			<hr>
+		</div>
+		<!-- Content-End -->
+
+		<!-- Footer-Start -->
+		<div class="bg-dark">
+				<div class="container">
+				  <div class="row " class="text-white">
+					<div class=" col-sm-12 text-center col-md-6 text-md-left col-lg-4">
+					  <h3 class="mt-4 text-white">Follow us on <i class="fas fa-share-alt-square" style="font-size:30px;color:rgb(11, 187, 241);"></i></h3>
+					  <div class="match card bg-dark my-3 border border-info">
+						<div class="card-body">
+							<p><a class="text-white" target="_blank" href="https://www.facebook.com">Facebook <i class="fab fa-facebook-square social-icon-position social-facebook" 
+							  ></i></a></p>
+							<p><a class="text-white" target="_blank" href="https://www.twitter.com">Twitter <i class="fab fa-twitter-square social-icon-position social-twitter" 
+							  ></i></a></p>
+							<p><a class="text-white" target="_blank" href="https://www.youtube.com">YouTube <i class="fab fa-youtube-square social-icon-position social-youtube" 
+							  ></i></a></p>
+							<p><a class="text-white" target="_blank" href="https://www.snapchat.com/">Snapchat<i class="fab fa-snapchat-square social-icon-position social-snapchat" 
+							  ></i></a></p>
+						</div>
+					  </div>
+					</div>
+					<div class=" col-sm-12 text-center text-md-left col-md-6 col-lg-4">
+					  <h3 class="mt-4 text-white">Reach Us <i class="fas fa-envelope-square" style="font-size:30px;color:rgb(201, 235, 50);"></i></h3>
+					  <div class="match card bg-dark my-3 border border-info text-white">
+						<div class="card-body">
+						  <form action="">
+							<div class="form-group">
+								<label for="">Email</label>
+								<input type="text" class="form-control">
+		  
+								<label for="">Your Message:</label>
+								<textarea name="" id="" class="form-control" cols="30" rows="5"></textarea>
+								
+							</div>
+							<button type="submit" class="btn btn-info">Send</button>
+						  </form>
+						</div>
+					  </div>
+					</div>
+					<div class=" col-sm-12 text-center text-md-left col-md-6 col-lg-4">
+					  <h3 class="mt-4 text-white">Catch us at <i class="fas fa-running" style="font-size:30px;color:rgb(114, 206, 235);"></i></h3>
+					  <div class="match card bg-dark my-3 border border-info">
+						<div class="card-body">
+							<h4><a class="text-white" target="_blank" href="https://en.wikipedia.org/wiki/Boston_Public_Garden">Boston Public Garden<i class="fas fa-map-marker-alt" style="float:right; font-size:30px;color:silver;"></i></a></h4>
+							<p><a class="text-white" target="_blank" href="https://en.wikipedia.org/wiki/Boston_Public_Garden">Address: 4 Charles St, Boston, MA 02116, United States<i class="fas fa-map-pin" style="float:right; font-size:30px;color:red;"></i></a></p>
+							<p class="text-white">Phone: +1 617-635-4505 <i class="fas fa-phone-square-alt" style="float:right; font-size:30px;color:rgb(0, 195, 255);"></i></p>
+							<img src="images/logoboston.png" width="150" height="150" alt="">
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+		</div>
+		<div style="background-color: black; height: 27px; color: silver;" class="text-center font-weight-lighter">Copyright © 2019 Watch it Online Inc. All rights reserved</div>
+		<!-- Footer-End -->
+		  
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="jquery-match-height-master/jquery.matchHeight.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+		<script>
+		$(function() {
+			$('.match').matchHeight({
+				byRow: true,
+				property: 'height',
+				target: null,
+				remove: false
+			});
+			$('select').selectpicker();
+		});
+		</script>
+	</body>
+
+</html>
